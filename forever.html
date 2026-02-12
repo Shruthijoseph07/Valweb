@@ -6,31 +6,68 @@
 </head>
 
 <body>
+  <!-- Background Music -->
+  <audio autoplay id="bg-music">
+    <source src="love.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const music = document.getElementById('bg-music');
+    music.volume = 0.3; // soft volume
+    music.play();
+  </script>
+
+  <!-- Floating Hearts -->
+  <div class="heart"></div>
+  <div class="heart" style="left:30%; animation-duration:5s;"></div>
+  <div class="heart" style="left:70%; animation-duration:7s;"></div>
+
+  <!-- Teddy Bear GIFs -->
+  <img src="teddy.gif" class="teddy teddy-left" alt="Teddy Bear Left">
+  <img src="teddy.gif" class="teddy teddy-right" alt="Teddy Bear Right">
+
   <div class="final">
-    <h1>Our Forever, My Purusha ❤️</h1>
+    <h1>Our Forever 💍</h1>
 
     <p>
-      Purusha… you know how messy our journey has been.  
-      Long distance, fights, misunderstandings… yet here we are.  
+      Purusha… you know how messy our journey has been.<br>
+      Long distance, fights, misunderstandings… yet here we are.<br>
       And I wouldn’t change a thing.
     </p>
 
     <p>
-      I just want us to keep laughing together,  
-      checking on each other, annoying each other…  
+      I just want us to keep laughing together,<br>
+      checking on each other, annoying each other…<br>
       and building our little world.
     </p>
 
     <p>
-      No fancy words, no reasons…  
-      you are simply my forever. My Purusha. My partner. My best friend.
+      No fancy words... Will you be my butterfly forever?
     </p>
 
-    <h2>So… will you be mine, today and always, Purusha? 💍❤️</h2>
-
-    <p><strong>Forever yours, Shruthi</strong><br>❤️</p>
-    <a href="index.html" class="btn">Back to Our Beginning 💖</a>
+    <p><strong>Forever yours, Shruthi</strong> ❤️</p>
   </div>
-</body>
-</html>
 
+  <!-- Proposal Section -->
+  <div class="proposal">
+    <button class="btn yes" onclick="yesResponse()">Yes 💖</button>
+    <button class="btn no" onclick="noResponse()">No 😢</button>
+
+    <p id="response" style="margin-top:20px; font-size:22px;"></p>
+  </div>
+
+  <script>
+    function yesResponse() {
+      const res = document.getElementById("response");
+      res.innerHTML = "Yay! I knew it 💕 Forever yours, Shruthi ❤️";
+      res.style.color = "#ff3f7f";
+    }
+
+    function noResponse() {
+      const res = document.getElementById("response");
+      res.innerHTML = "Oh no… 😢 But I’ll keep loving you anyway 💖";
+      res.style.color = "#ffffff";
+    }
+  </script>
+</body>
+    </html>
