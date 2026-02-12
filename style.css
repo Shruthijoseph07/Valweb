@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Georgia", serif;
-  background: linear-gradient(to bottom, #ff5f8a, #ff85b3);
-  color: white;
+  background-color: #f5f5dc; /* soft beige */
+  color: #5a3e36; /* dark brown text for readability */
   text-align: center;
 }
 
@@ -23,8 +23,8 @@ p {
   display: inline-block;
   margin-top: 30px;
   padding: 15px 35px;
-  background: white;
-  color: #ff3f7f;
+  background: #ff3f7f; /* pink buttons stand out on beige */
+  color: white;
   text-decoration: none;
   border-radius: 30px;
   font-size: 18px;
@@ -41,7 +41,7 @@ p {
 .gallery img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .letter, .final {
@@ -55,7 +55,7 @@ p {
   position: fixed;
   width: 30px;
   height: 30px;
-  background: red;
+  background: #ff3f7f; /* pink hearts visible on beige */
   transform: rotate(45deg);
   left: 50%;
   bottom: -50px;
@@ -69,7 +69,7 @@ p {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: red;
+  background: #ff3f7f;
   border-radius: 50%;
 }
 
