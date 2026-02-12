@@ -91,15 +91,15 @@ p {
 /* ================= Teddy Bear Flying Kiss ================= */
 .teddy {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 80px;
+  bottom: 20px;    /* start from bottom */
+  right: 20px;     /* start from right */
+  width: 150px;    /* bigger teddy */
   animation: flyKiss 5s ease-in-out infinite alternate;
   z-index: 9999;
 }
 
 @keyframes flyKiss {
   0% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(-100px, -50px) rotate(-15deg); }
-  100% { transform: translate(-200px, -100px) rotate(-30deg); }
-}
+  50% { transform: translate(-150px, -75px) rotate(-15deg); }
+  100% { transform: translate(-300px, -150px) rotate(-30deg); }
+  }
